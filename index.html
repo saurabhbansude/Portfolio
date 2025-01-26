@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/474585c5ae.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="header" >
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, Im <span>Saurabh</span> Bansude<br> From India</h1>
+            </div>
+            <a href="saurabh cv.pdf" download class="btn">Download CV</a>
+        </div>
+    </div>
+    <!--------------About------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="s.webp" height="420px" width="320px" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I’m Saurabh Kisan Bansude, a passionate computer engineering student with a strong
+                         focus on web development and UI/UX design. I specialize in creating user-friendly, visually appealing, and functional digital 
+                         experiences. With a keen eye for detail and a drive to stay updated with the latest industry trends, I enjoy transforming innovative
+                          ideas into reality through clean code and intuitive design. Whether it’s building responsive websites or crafting seamless user interfaces, I aim to deliver solutions that not
+                           only meet but exceed expectations. Let's create something amazing together!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Java Full Stack</span><br>Java Programing</li>
+                            <li><span>Figma</span><br>Design web pages</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li><span>2024-Current</span><br>Acmegrade</li>
+                            <li><span>January 2025 </span><br>Worked in Vidhate farms builders and devlopers as a web developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-ongoing</span><br>Compuer Engineer <br>Keystone School of engineering</li>
+                            <li><span>2021-2022 </span><br>12th Science PCM <br>Creative inernational school and jr college.</li>
+                            <li><span>2019-20</span><br>10th SemiEnglish<br>L G Bansude english medium school</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------------services------------>
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I am a dedicated web developer with a passion for building responsive and visually appealing websites. With a focus on clean code and user-friendly designs, I strive to create seamless digital experiences that leave a lasting impression.</p>
+               
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>I am a creative UI/UX designer who loves crafting intuitive and engaging user experiences. With a focus on user-centric design and attention to detail, I aim to create interfaces that are not only visually appealing but also easy to navigate and functional.</p>
+                
+            </div>
+            <div>
+                <i class="fa-brands fa-figma"></i>
+                <h2>Figma</h2>
+                <p>I am skilled in using Figma to design intuitive and visually stunning user interfaces. From wireframes to prototypes, I leverage Figma’s collaborative tools to create user-centric designs that bring ideas to life efficiently and effectively.</p>
+               
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-----------Portfolio------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="1.jpeg" height="130px" width="130px"alt="1">
+                <div class="layer">
+                    <h3>Login page</h3>
+                    <P>A login page provides a secure interface for users to enter their credentials (username and password) to access personalized accounts. It ensures authorized access while protecting user data.</P>
+                </div>
+            </div>
+            <div class="work">
+                <img src="2.jpeg" height="130px" width="130px"alt="2">
+                <div class="layer">
+                    <h3>About us page</h3>
+                    <P>An "About Us" page showcases a company’s mission, values, and story, giving visitors insight into its purpose and identity. It builds trust and connects with the audience.</P>
+                </div>
+            </div>
+            <div class="work">
+                <img src="3.jpeg" height="130px" width="130px"alt="3">
+                <div class="layer">
+                    <h3>Contact page</h3>
+                    <P>A "Contact" page provides users with ways to get in touch, including forms, email, phone, and location details. It facilitates communication and support.</P>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-envelope"></i> saurabhbansude74@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i> +919766764322</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/mr.saurabh_10__/?__pwa=1"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/saurabh-bansude-19547b331/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/saurabhbansude"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea  name="message" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Saurabh. Thank you  <i class="fa-solid fa-heart"></i>  For Visiting.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+             tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+     }
+</script>
+<script>
+   var sidemen = document.getElementById("sidemenu");
+    
+     
+    function openmenu(){
+        sidemen.style.right = "0" ;
+    } 
+
+    function closemenu(){
+        sidemen.style.right = "-200px" ;
+    } 
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxtxxqVlQ-WSAdX5YdSS-rj_y0qlQIJSoIg-AuNxNZ-4Mf8F4JJrT5Zr5CllDVzs7a_/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },500)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
